@@ -5,6 +5,18 @@ import (
 )
 
 type Config struct {
+	// Database config
+	DbUsername             string `mapstructure;"db_username"`
+	DbPassword             string `mapstructure;"db_password"`
+	DbHost                 string `mapstructure;"db_host"`
+	DbPort                 string `mapstructure;"db_port"`
+	DbName                 string `mapstructure;"db_name"`
+	DbSchema               string `mapstructure;"db_schema"`
+	DbPreferSimpleProtocol bool   `mapstructure;"db_prefer_simple_protocol"`
+	DbPrepareStatement     bool   `mapstructure;"db_prepare_statement"`
+	DbMigrate              bool   `mapstructure;"db_migrate"`
+
+	// Telegram
 	BotApiToken string `mapstructure:"bot_api_token"`
 }
 

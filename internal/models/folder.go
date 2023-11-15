@@ -3,8 +3,8 @@ package models
 import "github.com/google/uuid"
 
 type Folder struct {
-	id     uuid.UUID `json:"id"`
-	userId uuid.UUID `json:"userId"`
-	name   string    `json:"name"`
-	icone  string    `json:"icone"`
+	Id     uuid.UUID `json:"id"`
+	UserId uuid.UUID `json:"userId"`
+	Name   string    `json:"name"`
+	Icone  string    `json:"icone"`
 }
